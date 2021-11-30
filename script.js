@@ -1,8 +1,23 @@
-function Reverse(arry){
-    let newarr = []
-    for (let i = arry.length - 1; i >= 0; i--) {
-        newarr+=arry[i];
-    }
-    return newarr ;
-}
-console.log(Reverse("hello mello hi"));
+
+let arr=["globus","venera",""];
+
+let newArr=arr.filter(!Boolean)
+console.log(newArr);
+
+let object_key="username";
+
+let obj={
+   name:"venera",
+   star:"five",
+   [object_key]:"venerave",
+   getInfo:function(){
+    return `${this.name} ${this.star}`
+   },
+
+};
+console.log(obj.name);
+console.log(obj.star);
+console.log(obj["name"]);
+console.log(obj);
+console.log(obj.getInfo());
+
