@@ -1,23 +1,26 @@
+let namee = document.querySelector("#firstname")
+let btn=document.querySelector(".btn")
+let lastname = document.querySelector("#lastname")
+let password = document.querySelector("#password")
 
-let arr=["globus","venera",""];
 
-let newArr=arr.filter(!Boolean)
-console.log(newArr);
 
-let object_key="username";
+const form = document.getElementById("form")
 
-let obj={
-   name:"venera",
-   star:"five",
-   [object_key]:"venerave",
-   getInfo:function(){
-    return `${this.name} ${this.star}`
-   },
 
-};
-console.log(obj.name);
-console.log(obj.star);
-console.log(obj["name"]);
-console.log(obj);
-console.log(obj.getInfo());
+if (namee.value=="") {
+    alert ("please your add name ")
+}
+
+if (lastname.value=="") {
+    alert ("please your add lastname ")
+}
+
+if (password.value=="") {
+    alert ("please your add password ")
+}
+
+
+
+
 
